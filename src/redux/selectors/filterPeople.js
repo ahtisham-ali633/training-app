@@ -2,7 +2,8 @@ import { isEmpty } from "../../utils/flags";
 
 export const getPeople = (state) => {
   return state.peopleReducer.people.find((person) => {
-    return state.modalReducer.personModal.personId == person.login.uuid;
+    console.log("SSSSSSSSSSss", state.modalReducer.personId)
+    return state.modalReducer.personId == person.login.uuid;
   });
 };
 

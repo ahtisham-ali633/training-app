@@ -5,6 +5,7 @@ import Store from "./redux/store";
 import { Provider } from "react-redux";
 import {fetchPeople} from "./redux/actions/peopleAction";
 import Setting from "./container/Setting";
+import 'antd/dist/antd.css'
 
 
 function App() {

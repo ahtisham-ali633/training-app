@@ -27,6 +27,7 @@ function PersonalDetailModal({
                         );
                     })} />
                 </Card>
+
             </Modal>
         )
     );

@@ -10,7 +10,7 @@ import ProgressBar from "../components/home/progressBar/ProgressBar";
 import { isEmpty, isUndefined } from "../utils/flags";
 import PersonalDetailModal from "../components/home/personDetailModel/PersonDetailModel";
 import PeopleSearchBar from "../components/home/peopleSearchBar/PeopleSearchBar";
-import { SET_SEARCH_TERM } from "../redux/types/peopleTypes";
+import { SET_SEARCH_TERM } from "../redux/types/PeopleTypes";
 import {
     PERSON_MODAL_OPEN,
     PERSON_MODAL_CLOSE,
@@ -43,7 +43,9 @@ function Home() {
             "Nationality: " + person.nat,
         ];
     }
-    const personModalOpen = useSelector((state) => state.modalReducer.personModal.modalOpen);
+    const personModalOpen = useSelector((state) => state.modalReducer.modalOpen);
+
+
 
     console.log("personModel ", personModalOpen) 
 

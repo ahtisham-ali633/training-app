@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from 'antd';
+import { Card, Divider } from 'antd';
 
 
 function PersonCard({ openPersonModalAction, personName, personPicture, personId }) {
@@ -9,12 +9,12 @@ function PersonCard({ openPersonModalAction, personName, personPicture, personId
         <>
             <Card
                 hoverable
-                style={{ width: 640 }}
-                cover={<img id={personId} onClick={openPersonModalAction} src={personPicture} alt="image " />}
+                style={{ width: 200 }}
+                cover={<img id={personId} onClick={openPersonModalAction} src={personPicture} alt="not found" />}
             >
                 <Meta title={personName} onClick={openPersonModalAction} />
             </Card>
-
+            <Divider/>
         </>
     )
 }

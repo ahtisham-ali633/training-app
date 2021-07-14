@@ -7,7 +7,7 @@ const initialState = {
     loading: false,
     searchPeopleTerm: "",
 };
-function PeopleReduser(state = initialState, action) {
+function PeopleReducer(state = initialState, action) {
     switch (action.type) {
         case FETCH_PEOPLE:
             return {
@@ -40,4 +40,4 @@ function PeopleReduser(state = initialState, action) {
     }
 }
 
-export default PeopleReduser
+export default PeopleReducer
